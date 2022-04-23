@@ -90,8 +90,10 @@ const MainHeader = styled(MaxWidthWrapper)`
   margin-bottom: 48px;
 
   @media ${QUERIES.desktopAndUp} {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: baseline;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 `;
 
@@ -99,6 +101,7 @@ const SubscribeContainer = styled.div`
   display: none;
   @media ${QUERIES.desktopAndUp} {
     display: block;
+    margin-left: auto;
   }
 `;
 
