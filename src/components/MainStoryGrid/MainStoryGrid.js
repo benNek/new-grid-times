@@ -126,6 +126,10 @@ const OpinionStoryList = styled(StoryList)`
 
 const OpinionSection = styled.section`
   grid-area: opinion-stories;
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-top: -9px;
+  }
 `;
 
 const AdvertisementSection = styled.section`
